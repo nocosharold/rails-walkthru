@@ -1,0 +1,12 @@
+<div class="row align-items-md-stretch mb-5">
+  <div class="col">
+    <div class="h-100 p-5 bg-light rounded-3">
+      <h2><%= @friend.first_name %> <%= @friend.last_name %></h2>
+      <p class="mb-5"><%= @friend.email %> | <%= @friend.phone %> | @<%= @friend.twitter %></p>
+      <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary" %>
+      <%= link_to 'Back', friends_path, class:"btn btn-outline-secondary" %>
+    </div>
+  </div>
+</div>
+
+
